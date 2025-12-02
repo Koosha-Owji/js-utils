@@ -226,9 +226,13 @@ export type LoginOptions<T = Record<string, string>> = {
    * Configuration mode for custom code pages
    */
   pagesMode?: "preview";
-
+  /**
+   * Invitation code to use for the registration
+   */
   invitationCode?: string;
-
+  /**
+   * Whether the login is an invitation (required when code is provided)
+   */
   isInvitation?: boolean;
 };
 
