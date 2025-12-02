@@ -36,6 +36,7 @@ export type LoginMethodParams<T = Record<string, string>> = Partial<
     | "planInterest"
     | "pricingTableKey"
     | "pagesMode"
+    | "invitationCode"
   >
 >;
 
@@ -225,6 +226,10 @@ export type LoginOptions<T = Record<string, string>> = {
    * Configuration mode for custom code pages
    */
   pagesMode?: "preview";
+
+  invitationCode?: string;
+
+  isInvitation?: boolean;
 };
 
 export enum IssuerRouteTypes {
