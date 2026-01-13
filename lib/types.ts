@@ -232,6 +232,9 @@ export type LoginOptions<T = Record<string, string>> = {
   invitationCode?: string;
   /**
    * Whether the login is an invitation (required when code is provided)
+   *
+   * Note: When using mapLoginMethodParamsForUrl, this is automatically set to true
+   * when invitationCode is provided. In other contexts, you may need to set this manually.
    */
   isInvitation?: boolean;
 };
